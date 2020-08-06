@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GKART</title>
+        <link href="https://fonts.googleapis.com/css?family=Comic+Neue|Liu+Jian+Mao+Cao|Roboto|Spicy+Rice&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Luckiest+Guy&family=Merriweather&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <table cellspacing="30" align="center">
+            <tr>
+                <div>
+                <td><img src="images/logo.png" alt="logo" height="60" width="60" class="borderImg"></td>
+                <td><h1><b>GKART-The store for all your needs</b></h1></td>
+                </div>
+            </tr>
+        </table>
+        </div>
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+                <li class="topnav-right"><a href="signin.html">Sign In</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if(x.className === "topnav"){
+                    x.className += " responsive";
+                    /*change topnav to topnav.responsive*/
+                } else{
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        <header>
+            <h1 class="s2header">Best Selling</h1>
+        </header>
+        <div class="container1">
+            <div class="row">
+                <div class="col-4">
+                    <div class="box">
+                        <img src="images/clothing.jfif" class="icon">
+                        <label class="ff">Clothing</label>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                        <img src="images/Accessories.jfif" class="icon">
+                        <label class="ff">Accessories</label>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                        <img src="images/Beverages.jfif" class="icon">
+                        <label class="ff">Beverages</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="c1">
+        <div class = "row">
+        <div class="col-6">
+            <div class="leftSide-col">
+            <h3>FAQs & Suggestions</h3>
+            <form>
+            <h2>Name:</h2>
+            <input type="text"><br>
+            <h2>Suggestion:</h2>
+            <input type="text" name="username"><br><br>
+            <input type="submit" class="inp" value="SUBMIT">
+            </form>
+            </div>
+        </div>
+        <div class = "col-6">
+            <div class="rightSide-col">
+                <iframe width="450" height="250" src="https://www.youtube.com/embed/UScf6RseI7w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+        </div>
+
+    </body>
+</html>
